@@ -19,7 +19,7 @@ function gameOver(){
 	gameOverLink.setAttribute('href', 'game.html')
 	var gameOverText = document.createElement('span');
 	gameOverLink.append(gameOverText);
-	gameOverText.textContent = 'You\'ve been captured!';
+	gameOverText.textContent = 'You\'ve been\n captured!';
 }
 
 function escapedScreen() {
@@ -998,6 +998,26 @@ function startGame(){
 		}
 	}
 	showEnvironment();
+	document.getElementById('3-4').addEventListener("click", function(e){
+		e.preventDefault();
+		movePlayer('w');
+	});
+	document.getElementById('4-3').addEventListener("click", function(e){
+		e.preventDefault();
+		movePlayer('a');
+	});
+	document.getElementById('5-4').addEventListener("click", function(e){
+		e.preventDefault();
+		movePlayer('s');
+	});
+	document.getElementById('4-5').addEventListener("click", function(e){
+		e.preventDefault();
+		movePlayer('d');
+	});
+	document.getElementById('4-4').addEventListener("click", function(e){
+		e.preventDefault();
+		movePlayer(' ');
+	});
 	document.addEventListener("keyup", function(e){
 		e.preventDefault();
 		movePlayer(e.key);

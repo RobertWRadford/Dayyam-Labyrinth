@@ -8,177 +8,30 @@ body {
 }
 
 #goHome {
-	color: blue;
-	font-size: 2vh;
-	background-color: black;
-	width: 20vh;
-	height:3vh;
-	border-radius: 0px 0px 30px 0px;
 	display: inline-block;
-	margin-bottom: 1vh;
+	color: rgb(65,65,255);
+	font-size: max(1.4vw, 14px);
+	background-color: black;
+	width: max(12vw, 120px);
+	height:max(2vw, 25px);
+	border-radius: 0px 0px 30px 0px;
 	font-family: 'Imprint MT Shadow';
 	text-align: center;
+	vertical-align: bottom;
 }
 
 #goAbout {
-	color: blue;
-	font-size: 2vh;
+	color: rgb(65,65,255);
+	font-size: max(1.4vw, 14px);
 	background-color: black;
-	width: 20vh;
-	height:3vh;
+	width: max(12vw, 120px);
+	height:max(2vw, 25px);
 	border-radius: 0px 0px 30px 30px;
 	display: inline-block;
-	margin-bottom: 1vh;
 	font-family: 'Imprint MT Shadow';
-	margin-left: 5vh;
+	margin-left: min(15vw, 50px);
 	text-align: center;
 }
-
-div {
-	width: 90vh;
-	height: 90vh;
-	margin:auto;
-
-	border:8px solid black;
-	border-radius: 30px;
-	padding:.5vw;
-	background-color: black;
-}
-
-img {
-	width:10vh;
-	height:10vh;
-	padding: 0px;
-	margin:0px;
-}
-
-table, tr, td {
-	padding: 0px;
-	border-spacing: 0px;
-	margin:0px;
-	border:0px;
-	line-height:0px;
-}
-
-
-
-.victoryScreen {
-	background-image: url('../assets/img/scary_house.jpeg');
-	background-size: cover;
-}
-
-.victoryScreen > a {
-	position: absolute;
-	font-size: 8vh;
-	color: peachpuff;
-	font-family: 'Blackadder ITC';
-	margin-left: 45vh;
-	margin-top:80vh;
-	transform: translate(-50%, -50%);
-}
-
-#containerDiv > a:hover span {
-	display: none;
-}
-
-#containerDiv > a:hover:before {
-	content: 'Try again?';
-  
-}
-
-.lostScreen {
-	background-image: url('../assets/img/trapped_person.jpeg');
-	background-size: cover;
-}
-
-.lostScreen > a {
-	position: absolute;
-	margin-top: 10vh;
-	margin-left: 10vh;
-	font-size: 7vh;
-	color: maroon;
-	font-family: 'Blackadder ITC';
-}
-
-.startingScreen {
-	background-image: url('../assets/img/introPicture.jpg');
-	background-size: cover;
-}
-
-.startingScreen > #formsHere {
-	margin-top: 65vh;
-	margin-left: 5vh;
-	background-color: rgba(0, 0, 0, .5);
-	width: 80vh;
-}
-
-#formsHere > #title {
-	display: inline-block;
-	font-size: 6vh;
-	color: maroon;
-	font-family: 'Blackadder ITC';
-	margin-left: 5vh;
-	width: 70vh;
-	height: 8vh;
-}
-
-#startButton {
-	margin-left: 1vh;
-}
-
-#formsHere > input {
-	color:maroon;
-	margin-top: 2vh;
-	height:4vh;
-	width: 25vh;
-	font-size: 2vh;
-	font-family: 'Imprint MT Shadow';
-	text-align: center;
-	background-color: transparent;
-	border: 5px;
-	padding: 0px;
-}
-
-#formsHere > select {
-	color:maroon;
-	margin-top: 2vh;
-	height:4vh;
-	width: 25vh;
-	font-size: 2vh;
-	font-family: 'Imprint MT Shadow';
-	text-align: center;
-	background-color: transparent;
-	border: 5px;
-}
-
-#genderLabel {
-	margin-left: 10vw;
-	width: 25vh;
-}
-
-#genderCheck {
-	margin-left: 10vh;
-}
-
-#explainInput {
-	margin-left: 1vh;
-	display: inline-block;
-	width:25vh;
-}
-
-#askSize {
-	margin-left: 1vh;
-}
-
-#formsHere > label {
-	color:maroon;
-	margin-top: 2vh;
-	font-size: 2vh;
-	font-family: 'Imprint MT Shadow';
-	text-align: center;
-	background-color: transparent;
-}
-
 
 img[id='0-0'] {
 	border-radius: 30px 0px 0px 0px;
@@ -195,4 +48,282 @@ img[id='8-0'] {
 img[id='8-8'] {
 	border-radius: 0px 0px 30px 0px;
 
+}
+
+table, tr, td {
+	padding: 0px;
+	border-spacing: 0px;
+	margin:0px;
+	border:0px;
+	line-height:0px;
+}
+
+.victoryScreen {
+	background-image: url('../assets/img/scary_house.jpeg');
+	background-size: cover;
+}
+
+#containerDiv > a:hover span {
+	display: none;
+}
+
+#containerDiv > a:hover:before {
+	content: 'Try again...?'; 
+}
+
+.lostScreen {
+	background-image: url('../assets/img/trapped_person.jpeg');
+	background-size: cover;
+}
+
+
+.startingScreen {
+	background-image: url('../assets/img/introPicture.jpg');
+	background-size: cover;
+}
+
+@media (min-width:720px){
+
+	div {
+		width: 45vw;
+		height: 45vw;
+		margin:auto;
+		margin-top: 1.5vw;
+		border:8px solid black;
+		border-radius: 30px;
+		padding:.5vw;
+		background-color: black;
+	}
+
+	img {
+		width:5vw;
+		height:5vw;
+		padding: 0px;
+		margin:0px;
+	}
+
+	.victoryScreen > a {
+		position: absolute;
+		font-size: 8vw;
+		color: peachpuff;
+		font-family: 'Blackadder ITC';
+		margin-left: 19%;
+		margin-top:39%;
+		transform: translate(-50%, -50%);
+	}
+
+	.lostScreen > a {
+		position: absolute;
+		margin-top: 3%;
+		margin-left: 1%;
+		font-size: 5vw;
+		color: maroon;
+		font-family: 'Blackadder ITC';
+	}
+
+	.startingScreen > #formsHere {
+		margin-top: 60%;
+		margin-left: 5%;
+		background-color: rgba(0, 0, 0, .5);
+		width: 90%;
+	}
+
+	#formsHere > #title {
+		display: inline-block;
+		font-size: 3vw;
+		color: maroon;
+		font-family: 'Blackadder ITC';
+		margin-left: 15%;
+		width: 70%;
+	}
+
+	#formsHere > input:not(#startButton) {
+		color:maroon;
+		margin-top: 1vw;
+		width: 20%;
+		font-size: 1.5vw;
+		font-family: 'Imprint MT Shadow';
+		text-align: center;
+		background-color: transparent;
+		border: 5px;
+		padding: 0px;
+	}
+
+	#startButton {
+		margin-left: 50%;
+		transform: translateX(-50%);
+		width: 50%;
+		color:maroon;
+		font-size: 1.5vw;
+		font-family: 'Imprint MT Shadow';
+		text-align: center;
+		background-color: transparent;
+		border: 5px;
+		padding: 0px;
+		margin-top: 5%;
+		margin-bottom: 5%;
+	}
+
+	#formsHere > select {
+		color:maroon;
+		margin-top: 1vw;
+		width: 20%;
+		font-size: 2vw;
+		font-family: 'Imprint MT Shadow';
+		text-align: center;
+		background-color: transparent;
+		border: 5px;
+	}
+
+	#genderLabel {
+		margin-left: 10%;
+		width: 25%;
+	}
+
+	#genderCheck {
+		margin-left: 10%;
+	}
+
+	#explainInput {
+		margin-left: 10%;
+		display: inline-block;
+		width:35%;
+	}
+
+	#askSize {
+		margin-left: 10%;
+	}
+
+	#formsHere > label {
+		color:maroon;
+		margin-top: 2%;
+		font-size: 2vw;
+		font-family: 'Imprint MT Shadow';
+		text-align: center;
+		background-color: transparent;
+	}
+}
+
+
+@media (max-width:719px){
+
+	div {
+		width: 90vw;
+		height: 90vw;
+		margin:auto;
+		margin-top: 25px;
+		border:8px solid black;
+		border-radius: 45px;
+		padding:5px;
+		background-color: black;
+	}
+
+	img {
+		width:10vw;
+		height:10vw;
+		padding: 0px;
+		margin:0px;
+	}
+
+	.startingScreen > #formsHere {
+		margin-top: 5%;
+		margin-left: 5%;
+		background-color: rgba(0, 0, 0, .5);
+		width: 90%;
+		height: 90%
+	}
+
+	#formsHere > #title {
+		display: inline-block;
+		font-size: max(7vw, 24px);
+		color: maroon;
+		font-family: 'Blackadder ITC';
+		margin-left: 15%;
+		margin-bottom: 10%;
+		width: 70%;
+	}
+
+	#formsHere > input:not(#startButton) {
+		color:maroon;
+		margin-top: max(3vw, 10px);
+		width: 20%;
+		font-size: max(5vw, 18px);
+		font-family: 'Imprint MT Shadow';
+		text-align: center;
+		background-color: transparent;
+		border: 5px;
+		padding: 0px;
+	}
+
+	#startButton {
+		margin-left: 10%;
+		width: 80%;
+		color:maroon;
+		font-size: max(5vw, 18px);
+		font-family: 'Imprint MT Shadow';
+		text-align: center;
+		background-color: transparent;
+		border: 5px;
+		padding: 0px;
+		margin-top: 20%;
+		margin-bottom: 5%;
+	}
+
+	#formsHere > select {
+		color:maroon;
+		margin-top: max(3vw, 10px);
+		width: 25%;
+		font-size: max(4.5vw, 15px);
+		font-family: 'Imprint MT Shadow';
+		text-align: center;
+		background-color: transparent;
+		border: 5px;
+	}
+
+	#genderLabel {
+		margin-left: 10%;
+		width: 25%;
+	}
+
+	#genderCheck {
+		margin-left: 10%;
+	}
+
+	#explainInput {
+		margin-left: 10%;
+		display: inline-block;
+		width:55%;
+	}
+
+	#askSize {
+		margin-left: 10%;
+	}
+
+	#formsHere > label {
+		color:maroon;
+		margin-top: max(3vw, 25px);
+		font-size: max(4.5vw,15px);
+		font-family: 'Imprint MT Shadow';
+		text-align: center;
+		background-color: transparent;
+	}
+
+	.victoryScreen > a {
+		position: absolute;
+		font-size: max(10vw, 28px);
+		color: peachpuff;
+		font-family: 'Blackadder ITC';
+		margin-left: 23%;
+		margin-top:78%;
+		transform: translate(-50%, -50%);
+	}
+
+	.lostScreen > a {
+		position: absolute;
+		margin-top: 3%;
+		margin-left: 1%;
+		font-size: max(10vw, 28px);
+		color: maroon;
+		font-family: 'Blackadder ITC';
+	}
 }

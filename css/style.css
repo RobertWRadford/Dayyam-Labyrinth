@@ -1,35 +1,31 @@
-/*css*/
-
-/*IN PROGRESS: build out some of the broad style choices like for; #container > table > tr > td > img {width:Xvw;height:Yvh;}*/
-
 header {
-  margin-top: 1vh;
+    margin: auto;
+    margin-top: 2vw;
+    width: 85vw;
+    text-align: center;
+    height: max(8vw, 110px);
+    border: thick solid rgb(107, 124, 103);
+    border-radius: 5%;
+    background-color: black;
+    box-shadow: 10px 10px 5px darkgrey;
+    color: rgb(158, 226, 243);
+    animation-name: animate1; 
+    animation-duration: 4s; 
 }
 
 h1 {
-    height: 3vh;
-    font-size: 9vh;
-    text-align: center;
     margin: auto;
-    padding-bottom: 15vh;
-    border: thick solid rgb(107, 124, 103);
-    width: 85vw;
-    border-radius: 8px;
+    font-size: max(4.5vw, 32px);    
     text-shadow: 2px 2px 5px red;
-    box-shadow: 10px 10px 5px darkgrey;
-    background-color: black;
-    color: rgb(158, 226, 243);
     font-family: 'Grenze Gotisch', cursive;
-    animation-name: animate1; 
-    animation-duration: 4s; 
 } 
 
 @keyframes animate1 {
-    from {
+    to {
        background-color: black;
        color: lightskyblue;
        border-radius: 5%;
-     } to {
+     } from {
        background-color: rgb(179, 174, 167);
        color: rgb(14, 13, 13);
        border-radius: 70%;
@@ -37,66 +33,62 @@ h1 {
    }
 
 body {
-        /* background-image: linear-gradient(-90deg, black, grey); */
-       background-image: url(https://i.pinimg.com/564x/d1/5d/fc/d15dfc114fdc960e17d3e02710dbcbe1.jpg);
-       background-size: cover;
-       height: 100vh;
-       width: 100vw;
+   background-image: url(https://i.pinimg.com/564x/d1/5d/fc/d15dfc114fdc960e17d3e02710dbcbe1.jpg);
+   background-size: cover;
 }
 
 h2 {
     text-align: center;
     font-weight: 300;
-    height: 10vh;
     color:red;
     text-shadow: 2px 2px 5px black;
-    font-style: normal;
     font-family: 'Grenze Gotisch', cursive;
-    font-size: 4vw;
-    text-decoration: blink;
-    margin-bottom: auto;
-    margin-top: 5vh;
-
-    /* border: thin solid black; */
+    font-size: max(4vw, 28px);
+    margin-top: 2vw;
 }
 
 button {
-    /* background-color: white; 
-    color: black; 
-    border: 2px solid #f44336; */
     text-align: center;
-    width:20vw;
-    margin-top: 5vh;
-    margin-left: 40vw;
-    background-color: rgb(214, 34, 34);
+    width:max(20vw, 160px);
+    margin-top: max(3vw, 30px);
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(194, 19, 19);
     color: black;
     font-weight: bold;
     font-family: 'Grenze Gotisch', cursive;
-    font-size: 2vw;
+    font-size: max(2vw, 20px);
    }
+
+button:hover {
+    cursor:pointer;
+    background-color: rgb(234, 49, 49);
+}
 
 a {
     display: block;
     text-align: center;
-    width: 20vw;
-    margin-left: 40vw;
-    margin-top: 2vh;
+    margin-left:50%;
+    transform: translateX(-50%);
+    margin-top: max(2vw, 20px);
     color: red;
     text-shadow: 2px 2px 5px black;
-    font-size: 1.5vw;
+    font-size: max(2vw, 20px);
     font-family: 'Grenze Gotisch', cursive;
-    font-weight: bold;
-
 }
+
+a:hover {
+    color:rgb(115,115,115);
+}
+
 p {
     text-align: center;
-    -webkit-text-stroke: .03vw rgb(255, 201, 52);
-    letter-spacing: .08vw;
-    width: 60vw;
+    -webkit-text-stroke: max(.02vw, .35px) rgb(215, 171, 22);
+    width: 90%;
     margin: auto;
-    margin-top: 5vh;
+    margin-top: max(2vw, 20px);
     color: black;
-    font-size: 1.5vw;
+    font-size: max(2vw, 22px);
     font-family: 'Bubblegum Sans';
     font-weight: lighter;
 
@@ -104,10 +96,18 @@ p {
 footer {
     text-align: center;
     color: white;
-    -webkit-text-stroke: .07vw black;
-    height: 10vh;
-    font-size: 1.3vw;
+    -webkit-text-stroke: max(.07vw, .7px) black;
+    font-size: max(1.3vw, 13px);
     font-family: 'Bubblegum Sans';
     font-weight: lighter;
-    margin-top: 3vh;
+    margin-top: max(5vw, 40px);
+}
+
+.contentDisplay {
+    margin:auto;
+    margin-top: max(3vw, 30px);
+    width:80%;
+    background-color: rgba(25,25,25,.5);
+    padding: 3vw;
+    border-radius: 25px;
 }

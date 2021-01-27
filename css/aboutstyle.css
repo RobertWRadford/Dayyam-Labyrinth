@@ -15,74 +15,50 @@ a:hover {
   color: peachpuff;
 }
 
-.memberDescription {
-  display: inline-block;
-  font-size: 1.1vw;
-  background-color: black;
-  /* border: solid rgb(250, 224, 74); */
-  border-width: 0px;
-  padding: 10px;
-  color: white;
-  width: 30vw;
-  margin-left: 13.6vw;
-  vertical-align: top;
-  margin-top: 2vh;
-  text-align: left;
-  box-shadow: 0px 0px 10px 10px whitesmoke;
+.profiles{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
-.lastMemberDescription {
-  display: block;
-  font-size: 1.1vw;
-  background-color: black;
-  /* border: solid rgb(250, 224, 74); */
-  border-width: 0px;
-  padding: 10px;
-  color: white;
-  width: 30vw;
-  margin: auto;
-  margin-top:2vh;
-  vertical-align: top;
-  text-align: left;
-  box-shadow: 0px 0px 10px 10px whitesmoke;
-  margin-bottom: 2vh;
+.profile{
+  margin:max(6vw, 20px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
 }
 
 .memberName {
   display: inline-block;
-  -webkit-text-stroke: 1.5px  rgb(255, 201, 52);
+  -webkit-text-stroke: max(.08vw, 1px) rgb(255, 201, 52);
   color: black;
-  padding-top: 10;
-  border: 0px;
-  margin: 0;
-  font-size: 3.5vw;
-  text-align: center;
-  width: 30vw;
-  margin-left: 13.6vw;
+  margin-bottom: max(1vw, 15px);
+  font-size: max(4vw, 45px);
 }
 
-.lastMemberName {
-  display: inline-block;
-  -webkit-text-stroke: 1.5px  rgb(255, 201, 52);
-  color: black;
-  padding-top: 10;
-  border: 0px;
-  margin: 0;
-  font-size: 3.5vw;
+.memberDescription {
+  margin-left:50%;
+  transform: translateX(-50%);
+  font-size: max(1.1vw, 16px);
+  background-color: black;
+  border-radius: 15px;
+  padding: max(2vw, 15px);
+  color: rgb(255, 201, 52);
+  width: max(30vw, 240px);
   text-align: center;
-  width: 30vw;
-  margin-left: 35vw;
+  box-shadow: 0px 0px 10px 10px whitesmoke;
 }
 
 #goHome {
   display: block;
-  color: blue;
-  font-size: 2vh;
+  color: rgb(65,65,255);
+  font-size: max(1.7vw, 20px);
   background-color: black;
-  width: 20vh;
-  height:3vh;
+  width: max(15vw, 160px);
+  height:max(3vw, 45px);
   border-radius: 0px 0px 30px 0px;
-  margin-bottom: 1vh;
   font-family: 'Imprint MT Shadow';
   text-align: center;
+  vertical-align: bottom;
 }

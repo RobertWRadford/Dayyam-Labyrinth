@@ -82,7 +82,7 @@ table, tr, td {
 	background-size: cover;
 }
 
-@media (min-width:720px){
+@media (min-width:960px){
 
 	div {
 		width: 45vw;
@@ -205,7 +205,7 @@ table, tr, td {
 }
 
 
-@media (max-width:719px){
+@media (max-width:959px){
 
 	div {
 		width: 90vw;

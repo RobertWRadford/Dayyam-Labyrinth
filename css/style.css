@@ -49,7 +49,7 @@ h2 {
 
 button {
     text-align: center;
-    width:max(20vw, 160px);
+    width:max(25vw, 240px);
     margin-top: max(3vw, 30px);
     margin-left: 50%;
     transform: translateX(-50%);
@@ -57,7 +57,7 @@ button {
     color: black;
     font-weight: bold;
     font-family: 'Grenze Gotisch', cursive;
-    font-size: max(2vw, 20px);
+    font-size: max(3vw, 30px);
    }
 
 button:hover {
@@ -73,7 +73,7 @@ a {
     margin-top: max(2vw, 20px);
     color: red;
     text-shadow: 2px 2px 5px black;
-    font-size: max(2vw, 20px);
+    font-size: max(3vw, 30px);
     font-family: 'Grenze Gotisch', cursive;
 }
 
@@ -83,11 +83,11 @@ a:hover {
 
 p {
     text-align: center;
-    -webkit-text-stroke: max(.02vw, .35px) rgb(215, 171, 22);
+    -webkit-text-stroke: max(.05vw, .5px) black;
     width: 90%;
     margin: auto;
     margin-top: max(2vw, 20px);
-    color: black;
+    color: red;
     font-size: max(2vw, 22px);
     font-family: 'Bubblegum Sans';
     font-weight: lighter;
@@ -97,7 +97,7 @@ footer {
     text-align: center;
     color: white;
     -webkit-text-stroke: max(.07vw, .7px) black;
-    font-size: max(1.3vw, 13px);
+    font-size: max(2.5vw, 25px);
     font-family: 'Bubblegum Sans';
     font-weight: lighter;
     margin-top: max(5vw, 40px);
